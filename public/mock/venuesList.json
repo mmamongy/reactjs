@@ -1,0 +1,85 @@
+{
+  "content": [
+    {
+      "id": 1,
+      "name": "Clarion Marriage Halls",
+      "city": "Islamabad",
+      "price": 60000,
+      "priceTag": "Price/ Hall",
+      "businessTypes": [
+        "VENUE"
+      ],
+      "numberOfHalls": 2,
+      "totalCapacity": 850,
+      "starRating": 4.5,
+      "totalReviews": 0,
+      "pictureUrl": "https://bit.ly/2DCPnOM",
+      "pictureUrls": [
+        "https://bit.ly/2DCPnOM",
+        "https://bit.ly/2Rj9Dby",
+        "https://bit.ly/2sMIlAR"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Taj Mahal Groups",
+      "city": "Stockholm",
+      "price": 700,
+      "priceTag": "Price/ Hall",
+      "businessTypes": [
+        "VENUE"
+      ],
+      "numberOfHalls": 2,
+      "totalCapacity": 850,
+      "starRating": 4.5,
+      "totalReviews": 0,
+      "pictureUrl": "https://bit.ly/2DCPnOM",
+      "pictureUrls": [
+        "https://bit.ly/2DCPnOM",
+        "https://bit.ly/2Rj9Dby",
+        "https://bit.ly/2sMIlAR"
+      ]
+    },  {
+      "id": 3,
+      "name": "Taj Mahal ",
+      "city": "Cairo",
+      "price": 900,
+      "priceTag": "Price/ Hall",
+      "businessTypes": [
+        "VENUE"
+      ],
+      "numberOfHalls": 2,
+      "totalCapacity": 500,
+      "starRating": 4.5,
+      "totalReviews": 0,
+      "pictureUrl": "https://bit.ly/2DCPnOM",
+      "pictureUrls": [
+        "https://bit.ly/2DCPnOM",
+        "https://bit.ly/2Rj9Dby",
+        "https://bit.ly/2sMIlAR"
+      ]
+    }
+  ],
+  "pageable": {
+    "sort": {
+      "sorted": false,
+      "unsorted": true
+    },
+    "offset": 0,
+    "pageSize": 15,
+    "pageNumber": 0,
+    "unpaged": false,
+    "paged": true
+  },
+  "totalElements": 2,
+  "last": true,
+  "totalPages": 1,
+  "size": 15,
+  "number": 0,
+  "numberOfElements": 2,
+  "first": true,
+  "sort": {
+    "sorted": false,
+    "unsorted": true
+  }
+}

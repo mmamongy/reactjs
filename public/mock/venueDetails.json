@@ -1,0 +1,69 @@
+{
+  "venue": {
+    "id": 2,
+    "venueServices": {
+      "food": [
+        "Outside caterer is not allowed",
+        "Catering via venue"
+      ],
+      "decoration": [
+        "Outside decorator allowed",
+        "Lighted and decorated halls",
+        "Decorated Stage"
+      ],
+      "venue": [
+        "Air conditioned bridal room",
+        "Separate ladies and gents halls",
+        "Dancing floor",
+        "Showers",
+        "Valet parking",
+        "Stage"
+      ],
+      "technology": [
+        "Wifi",
+        "Sound system",
+        "Electricity backup"
+      ],
+      "dj": [
+        "Outside DJ allowed",
+        "Live music"
+      ]
+    },
+    "halls": [
+      {
+        "id": 3,
+        "name": "Hall 1",
+        "minCapacity": 100,
+        "maxCapacity": 350,
+        "basePrice": 60000
+      },
+      {
+        "id": 4,
+        "name": "Hall 2",
+        "minCapacity": 300,
+        "maxCapacity": 500,
+        "basePrice": 150000
+      }
+    ],
+    "pictureUrl": "http://aws.com.vpm.main.jpg",
+    "pictureUrls": [
+      "http://aws.com.vpm.main1.jpg",
+      "http://aws.com.vpm.main2.jpg",
+      "http://aws.com.vpm.main3.jpg"
+    ],
+    "cancellationPolicies": [
+      "Free cancellation before 1 month of the event",
+      "Event date can be rescheduled with extra 25% amount"
+    ],
+    "houseRules": [
+      "No fir arms are allowed",
+      "No drugs allowed",
+      "We closes latest by 11 PM"
+    ]
+  },
+  "address": {
+    "street": "Sixth road 80",
+    "city": "Stockholmm",
+    "postalCode": "12345"
+  }
+}

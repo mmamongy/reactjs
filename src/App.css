@@ -1,0 +1,24 @@
+.MuiTypography-body1-44 {
+  font-size: 1.5rem; 
+
+ }
+ .MuiInputBase-input-28{
+   height: 50px;;
+ }
+ .card-img-top{
+
+ }
+
+ .venue-city{
+   font-weight: 400;
+ }
+ .card-venu-details{
+   list-style: none;
+   padding-left: 0px;
+ }
+ .card-venu-details li div:first-child {
+   font-weight: 600;
+ }
+ .pagination {
+  justify-content: center;
+}
