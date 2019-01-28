@@ -14,15 +14,16 @@ const suggestions = [
    {label: 'Islamabad'}, 
   { label: 'Stockholm'}
 ];
+var change;
 
-setChange(porps){
-change = props ;
-getChage(change) ;
+function setChange(x){
+change = x ;
+
 } 
 
 
 
-getChange(change){
+function getChange(){
   return change ;
 }
 
@@ -138,10 +139,12 @@ const styles = theme => ({
 });
 
 
+// eslint-disable-next-line no-undef
+
 function IntegrationDownshift(props) {
   console.log(props)
   const { classes } = props;
-  this.props.onChange = getChage() ;
+  this.props.onChange(change) ;
   return (
     <div className={classes.root}>
       <Downshift id="downshift-simple">

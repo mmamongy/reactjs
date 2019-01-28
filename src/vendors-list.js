@@ -1,4 +1,6 @@
 import React from 'react' ;
+import { BrowserRouter as Router, Route, Link, Switch , browserHistory} from "react-router-dom";
+import Vendor from './vendor';
 
 class VendorsList extends React.Component {
 
@@ -13,6 +15,7 @@ class VendorsList extends React.Component {
     render() {
         return ( 
         <div className="row">
+       
             
             { this.props.venues.map((item,index) =>(
                <div className="col-md-4">
@@ -32,13 +35,24 @@ class VendorsList extends React.Component {
                         <div className="col-sm-6 text-left">Total Capacity:</div>
                         <div className="col-sm-6 text-left">{item.totalCapacity}</div>
                         </div></li>
-                        <li key={'3'}><div className="row">
+                        <li key={'3'}>
+                        <div className="row">
                         <div className="col-sm-6 text-left">Price from</div>
                         <div className="col-sm-6 text-left">{item.price}</div>
                         </div></li>
+                            <li>
+                            <div className="row"> 
+                             <span><Link to={`/vendor/${item.id}`} className="btn btn-success" component={Vendor}>View Vendor</Link></span>
+                             <Route path="/:id" component={Vendor}/>
+
+                             
+                             </div>
+                      
+  </li>
                     </ul>
+                   
                     </div>
-                    <a href="#" className="btn btn-primary">Go somewhere</a>
+
                 </div>
                 </div>
                 </div>
@@ -63,8 +77,9 @@ class VendorsList extends React.Component {
                 </ul>
                 </nav>
                 </div>
-            
+               
         </div>
+       
         ) 
     }
 
