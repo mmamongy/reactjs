@@ -139,8 +139,6 @@ const styles = theme => ({
 });
 
 
-// eslint-disable-next-line no-undef
-
 function IntegrationDownshift(props) {
   console.log(props)
   const { classes } = props;

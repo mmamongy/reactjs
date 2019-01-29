@@ -1,6 +1,6 @@
 import React from 'react' ;
 import { BrowserRouter as Router, Route, Link, Switch , browserHistory} from "react-router-dom";
-import Vendor from './vendor';
+import Vendor from './components/vendor';
 
 class VendorsList extends React.Component {
 

@@ -4,8 +4,8 @@ import './App.css';
 import Search from './search';
 import VendorsList from './vendors-list' ;
 import axios from 'axios';
-import { BrowserRouter as Router, Route, Link, IndexRoute } from "react-router-dom";
-import Vendor from './vendor' ;
+import { BrowserRouter as Router, Route, Link, IndexRoute,  withRouter } from "react-router-dom";
+import Vendor from './components/vendor' ;
 // functional component 
 class App extends Component {
   state = {
@@ -41,20 +41,23 @@ class App extends Component {
   render() {
     console.log('VENUES  ' ,this.state.venues)
     return (
-      <Router path="/" >
+     
+      <Router ecaxt path="/" >
       
       <div className="container">
+      <Route path="/:id" component={Vendor}/>
       
-        {this.props.children}
+       
        <Search onChange={this.handelFilter}/>
        {/* <VendorsList deleteComponent={this.handleDelete} venues={this.state.resultFilter}  /> */}
 
-       <div className="row">
+       <section className="row">
        
-            
        { this.state.resultFilter.map((item,index) =>(
+          
           <div className="col-md-4">
-           <div className="card"  key={item.id }>
+        
+           <div className="card d-block"  key={item.id }>
            <img src={item.pictureUrl} 
            className="card-img-top" alt={item.name}/>
            <div className="card-body">
@@ -77,8 +80,9 @@ class App extends Component {
                    </div></li>
                        <li>
                        <div className="row"> 
-                        <span><Link to={`/vendor/${item.id}`} className="btn btn-success" component={Vendor}>View Vendor</Link></span>
-                        <Route path="/:id" component={Vendor}/>
+                        <div className="col-md-12">
+                        <Link to={`/vendor/${item.id}`} className="btn btn-success">View Vendor</Link></div>
+                       
 
                         
                         </div>
@@ -93,6 +97,8 @@ class App extends Component {
            </div>
            
        ))}
+       </section>
+       <footer>
        <div className="row">
            <nav aria-label="Page navigation example mr-auto">
            <ul className="pagination">
@@ -112,13 +118,11 @@ class App extends Component {
            </ul>
            </nav>
            </div>
-          
+           </footer>       
    </div>
 
-
-     
-       </div>
        </Router>
+       
     );
   }
 }
